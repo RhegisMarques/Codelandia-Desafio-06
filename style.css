@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -8,22 +8,57 @@
 
 html,
 body {
-  min-width: 100%;
+  width:100vw;
+  height: 100vh;
+  
+}
+.warpperAll {
+ 
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  
+  
   background: #0C0C0C;
 }
 
-.warpperAll {
+.imgBkg {
+  background-image: url("/img/fundo.jpg");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+ 
+ 
+}
+
+
+
+.left {
   
+  margin-top: 342px;
+  width: 184px;
+  height: 267px;
+  background-image: url("/img/capa.png");
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.right {
+  margin-left: 73px;
+  margin-top: 45px;
+  width: 720px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 .warpperTop {
-  border: 1px solid red;
+  margin-bottom: 121px;
 }
 
 .warpperTop h2 {
+  margin-bottom: 35px;
   font-family: "B612";
   font-style: normal;
   font-weight: 700;
@@ -47,14 +82,14 @@ body {
 }
 
 .warpperMain {
-  width: 720px;
   display: flex;
- display:  flex;
- flex-direction: column;
- justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .warpperMain p {
+  margin-bottom: 42px;
   font-family: "B612";
   font-style: normal;
   font-weight: 400;
@@ -64,13 +99,13 @@ body {
 
   color: #ffffff;
 }
-.timeClasse{border: 1px solid red;
-  width: 700px;
+.timeClasse {
   display: flex;
   justify-content: space-between;
 }
 
 .timeClasse span {
+  margin-bottom: 45px;
   font-family: "B612";
   font-style: normal;
   font-weight: 700;
@@ -81,24 +116,25 @@ body {
 }
 
 .warpperButton {
- display: flex;
- gap: 21px;
-  
+  display: flex;
+  gap: 21px;
 }
 .bNow {
   width: 184px;
   height: 52px;
- 
+  border: 0;
+  border-radius: 3px;
+  background: #0072d2;
 }
 
-.bNow button{
-  background: #0072d2;
-  border-radius: 3px;
+.bNow > a {
+  text-decoration: none;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  text-transform: uppercase;
 
   color: #ffffff;
 }
@@ -106,17 +142,21 @@ body {
 .bTrailer {
   width: 115px;
   height: 52px;
-  
+  border-radius: 3px;
   background: #131318;
   border: 1px solid #ffffff;
+}
+
+.bTrailer > a {
+  text-decoration: none;
+
   border-radius: 3px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  text-transform: uppercase;
 
   color: #ffffff;
-
- 
 }
