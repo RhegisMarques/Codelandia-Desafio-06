@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100%;
+  background: #0C0C0C;
+}
+
+.warpperAll {
+  
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.warpperTop {
+  border: 1px solid red;
+}
+
+.warpperTop h2 {
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.warpperTop h1 {
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.warpperMain {
+  width: 720px;
+  display: flex;
+ display:  flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.warpperMain p {
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+
+  color: #ffffff;
+}
+.timeClasse{border: 1px solid red;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeClasse span {
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.warpperButton {
+ display: flex;
+ gap: 21px;
+  
+}
+.bNow {
+  width: 184px;
+  height: 52px;
+ 
+}
+
+.bNow button{
+  background: #0072d2;
+  border-radius: 3px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.bTrailer {
+  width: 115px;
+  height: 52px;
+  
+  background: #131318;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+
+ 
+}
