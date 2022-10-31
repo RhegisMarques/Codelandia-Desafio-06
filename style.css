@@ -6,38 +6,56 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width:100vw;
-  height: 100vh;
-  
-}
-.warpperAll {
- 
-  width:100vw;
-  height: 100vh;
-  display: flex;
-  
-  
-  background: #0C0C0C;
-}
 
-.imgBkg {
+body { 
+  background: #0C0C0C; 
   background-image: url("/img/fundo.jpg");
   background-size: cover;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
- 
- 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+.warpperAll {
+  display: flex;
+  flex-direction: column;
+  
 
+}
+.warpperTop {
+  margin-top: 45px;
+  text-align: center;
+}
+.warpperTop h2 {
+  margin-bottom: 35px;
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.warpperTop h1 {
+  margin-bottom: 121px;
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+  color: #ffffff;
+}
+
+.warpperMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 73px;
+}
 
 .left {
-  
-  margin-top: 342px;
   width: 184px;
   height: 267px;
   background-image: url("/img/capa.png");
@@ -46,79 +64,48 @@ body {
 }
 
 .right {
-  margin-left: 73px;
-  margin-top: 45px;
   width: 720px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.warpperTop {
-  margin-bottom: 121px;
 }
 
-.warpperTop h2 {
-  margin-bottom: 35px;
-  font-family: "B612";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #ffffff;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.warpperTop h1 {
-  font-family: "B612";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 117px;
-  /* identical to box height */
-
-  color: #ffffff;
-}
-
-.warpperMain {
-  display: flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.warpperMain p {
-  margin-bottom: 42px;
+.right p {
+  margin-bottom: 43px;
   font-family: "B612";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  /* or 160% */
 
   color: #ffffff;
 }
+
 .timeClasse {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 44px;
 }
 
 .timeClasse span {
-  margin-bottom: 45px;
   font-family: "B612";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-
   color: #ffffff;
 }
 
+.timeClock {
+  margin-right: 15px;
+}
+
+.classification {
+  margin-left: 107px;
+  margin-right: 113px;
+}
 .warpperButton {
   display: flex;
   gap: 21px;
 }
+
 .bNow {
   width: 184px;
   height: 52px;
@@ -149,7 +136,6 @@ body {
 
 .bTrailer > a {
   text-decoration: none;
-
   border-radius: 3px;
   font-family: "Open Sans";
   font-style: normal;
@@ -159,4 +145,89 @@ body {
   text-transform: uppercase;
 
   color: #ffffff;
+}
+
+@media (max-width: 420px) {
+
+  .warpperAll {
+    display: flex;
+    justify-content: center;
+    padding: 60px 24px 35px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+  }
+  .warpperTop {
+  }
+
+  .warpperTop h2 {
+    font-family: "B612";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .warpperTop h1 {
+    font-family: "B612";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+  }
+
+  .warpperMain {
+  }
+
+  .warpperMain p {
+  }
+  .timeClasse {
+  }
+
+  .timeClasse span {
+    font-family: "B612";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .timeClock {
+    margin-right: 9.5px;
+  }
+
+  .timeClock img {
+    width: 16px;
+  }
+
+  .classification {
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
+  .classification img {
+    width: 16px;
+  }
+  .warpperButton {
+    width: 360px;
+    height: 250px;
+
+    background: #19191f;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .bNow {
+  }
+
+  .bNow > a {
+  }
+
+  .bTrailer {
+  }
+
+  .bTrailer > a {
+  }
 }
