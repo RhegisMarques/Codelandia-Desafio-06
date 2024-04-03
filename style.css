@@ -7,8 +7,7 @@
 }
 
 
-body { 
-  background: #0C0C0C; 
+body {
   background-image: url("/img/fundo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
